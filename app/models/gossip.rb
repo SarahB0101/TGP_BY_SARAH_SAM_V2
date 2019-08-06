@@ -1,11 +1,11 @@
 class Gossip < ApplicationRecord
-	# validates :title,
-	# 	presence: true,
-	# 	length: { minimum 3 } 
-	# 	length: { maximum 14 }
+	validates :title,
+		presence: true,
+		length: { minimum: 3 }, 
+		length: { maximum: 14 }
 
-	# validates :content,
-	# 	presence: true		
+	validates :content,
+		presence: true		
 
 	belongs_to :user
 	has_many :join_table_gossip_tags

@@ -54,11 +54,12 @@
 		<p>The Hacking Project est une chouette formation, où la communauté est reine. Il se passe plein de choses à Rennes, Paris, Lyon, Montpellier, Bordeaux et c'est dur de connaître tous les gossips. Nous avons donc créé une application où tout le monde peut ajouter des gossips sur ses camarades moussaillons.</p>
 		<br/>
 		<br/>
-<!-- 		<a href="/gossips/new/" class=" btn btn-dark btn-lg active" role="button" aria-pressed="true">Nouveau gossip ?</a>
+		<button class=" btn btn-dark btn-lg active" role="button" aria-pressed="true"><%=link_to 'Nouveau gossip ?', new_gossip_path %> </button>
+
 		<br/>	
 		<br/>
 		<br/>
-		<br/> -->
+		<br/> 
 
 		<!-- Ici, on lui demande d'afficher pour chaque gossip, l'auteur + le contenu -->
 		<% Gossip.all.each do |gossip| %>
